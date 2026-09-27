@@ -30,5 +30,6 @@
     "node": ">=22.12.0"
   },
   "description": "Modern Nx and Vue monorepo example with shared workspace libraries.",
-  "packageManager": "npm@10.9.8"
+  "packageManager": "npm@10.9.8",
+  "license": "MIT"
 }
