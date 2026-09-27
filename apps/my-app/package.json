@@ -1,0 +1,10 @@
+{
+  "name": "my-app",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "dependencies": {
+    "@nx-vue/ui": "0.0.0",
+    "vue": "3.5.43"
+  }
+}

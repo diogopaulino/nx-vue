@@ -1,41 +1,56 @@
 # Nx + Vue
 
-> **Legacy experiment (2021).** Kept as a historical reference and not actively maintained.
+A small modern monorepo using **Nx 23**, **Vue 3** and **Vite 8**.
 
-This repository was a small experiment combining **Nx 12** and **Vue 2** through the community `@nx-plus/vue` plugin, before Nx had first-party Vue support.
+This repository originally used Nx 12, Vue 2 and the old community `@nx-plus/vue` integration. It has been rebuilt around Nx's official first-party Vue tooling.
 
-## What changed since then
+## Stack
 
-The original stack is now obsolete:
+- Nx 23.2.1
+- `@nx/vue` 23.2.1
+- Vue 3.5.43
+- Vite 8.3.1
+- TypeScript 6
+- npm workspaces
+- Node.js 22+
 
-- Nx 12 has been superseded by modern Nx releases.
-- Vue 2 is end-of-life.
-- `@nx-plus/vue` has not been actively released for years.
-- Nx now provides official Vue support through `@nx/vue`.
+## Structure
 
-For a new project, use the current Nx Vue preset instead:
-
-```bash
-npx create-nx-workspace@latest --preset=vue
+```text
+apps/
+  my-app/      Vue application
+libs/
+  ui/          shared Vue component library
 ```
 
-Or add Vue to an existing Nx workspace:
+The app consumes `@nx-vue/ui` as a workspace package.
+
+## Setup
 
 ```bash
-nx add @nx/vue
+npm install
+npm run dev
 ```
 
-## Why this repository is not being upgraded in place
+## Validate
 
-A real migration would replace the old Vue integration, workspace configuration, test setup and most generated boilerplate. Recreating the example with the current Nx generator is cleaner and safer than changing dependency versions in place.
+```bash
+npm run typecheck
+npm run build
+```
 
-## Historical stack
+## Nx
 
-- Nx 12
-- Vue 2
-- TypeScript
-- Jest
-- Cypress
-- `@nx-plus/vue`
+```bash
+npm run graph
+npm run show
+```
 
-For current guidance, see the official Nx Vue documentation: https://nx.dev/docs/technologies/vue/introduction
+Generate more projects with the official plugin:
+
+```bash
+npx nx g @nx/vue:app apps/another-app
+npx nx g @nx/vue:lib libs/another-lib
+```
+
+Docs: https://nx.dev/docs/technologies/vue/introduction
