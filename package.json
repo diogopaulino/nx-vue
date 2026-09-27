@@ -21,7 +21,7 @@
     "@nx/vue": "23.2.1",
     "@vitejs/plugin-vue": "6.0.9",
     "nx": "23.2.1",
-    "typescript": "^6.0.0",
+    "typescript": "~5.9.2",
     "vite": "8.3.1",
     "vue-tsc": "2.2.12"
   },
