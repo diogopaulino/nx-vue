@@ -10,7 +10,7 @@ This repository originally used Nx 12, Vue 2 and the old community `@nx-plus/vue
 - `@nx/vue` 23.2.1
 - Vue 3.5.43
 - Vite 8.3.1
-- TypeScript 6
+- TypeScript 5.9
 - npm workspaces
 - Node.js 22+
 
