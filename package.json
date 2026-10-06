@@ -22,14 +22,14 @@
     "@nx/vue": "23.2.1",
     "@vitejs/plugin-vue": "6.0.9",
     "nx": "23.2.1",
-    "typescript": "~5.9.2",
-    "vite": "8.3.1",
-    "vue-tsc": "2.2.12"
+    "typescript": "^6.0.3",
+    "vite": "8.3.2",
+    "vue-tsc": "3.3.12"
   },
   "engines": {
     "node": ">=22.12.0"
   },
   "description": "Modern Nx and Vue monorepo example with shared workspace libraries.",
-  "packageManager": "npm@10.9.8",
+  "packageManager": "npm@10.9.9",
   "license": "MIT"
 }
